@@ -31,6 +31,7 @@
   padding: 6px 22px;
   transition: color 250ms var(--time-graf), background-color 250ms var(--time-graf), box-shadow 250ms var(--time-graf);
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--optional-color);
@@ -53,6 +54,10 @@
   animation-name: back-slider;
 }
 
+.portfolio-link{
+  transition: box-shadow 250ms var(--time-graf);
+}
+
 .portfolio-link:hover,
 .portfolio-link:focus {
   display: block;
@@ -60,10 +65,14 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-link .is-hiden-p{
+  transition: transform 250ms var(--time-graf);
+}
+
 .portfolio-link:focus .is-hiden-p,
 .portfolio-link:hover .is-hiden-p {
   transform: translateY(0);
-  transition: transform 250ms var(--time-graf);
+  /*transition: transform 250ms var(--time-graf);*/
 }
 
 .out {

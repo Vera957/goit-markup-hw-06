@@ -405,6 +405,81 @@
               <use href="./images/icons.svg#icon-modal-x"></use>
             </svg>
           </button>
+          <form>
+            <h2 class="form-h">Оставьте свои данные, мы вам перезвоним</h2>
+
+            <form>
+              <ul class="no-dots-ul form-contact-info-list no-margin">
+                <li class="item">
+                  <label for="name"> <span>Имя</span></label>
+                  <input
+                    tipe="text"
+                    id="name"
+                    class="form-contact-info"
+                    placeholder=" "
+                    name="user-name"
+                  />
+                  <svg width="12" height="12" class="svg-in-input">
+                    <use href="./images/icons.svg#icon-name"></use>
+                  </svg>
+                </li>
+                <li class="item">
+                  <label for="tel"> <span>Телефон</span></label>
+                  <input
+                    tipe="tel"
+                    id="tel"
+                    class="form-contact-info"
+                    placeholder=" "
+                    name="user-phone"
+                  />
+                  <svg width="13" height="13" class="svg-in-input">
+                    <use href="./images/icons.svg#icon-tel"></use>
+                  </svg>
+                </li>
+                <li class="item">
+                  <label for="mail"><span>Почта</span></label>
+                  <input
+                    tipe="email"
+                    id="mail"
+                    class="form-contact-info"
+                    placeholder=" "
+                    name="user-mail"
+                  />
+                  <svg width="15" height="12" class="svg-in-input">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                </li>
+              </ul>
+
+              <h3 class="no-margin comment-h">Коментарий</h3>
+              <textarea placeholder="Введите текст" class="comment"></textarea>
+
+              <span class="form-policy-block">
+                <label for="policy" class="form-label-policy">
+                  <input
+                    type="checkbox"
+                    id="policy"
+                    value="agry"
+                    name="policy-agreement"
+                    class="visually-hidden check"
+                  />
+                  <svg class="not-checked">
+                    <use href="./images/icons.svg#not-checked"></use>
+                  </svg>
+                  <svg class="checked">
+                    <use href="./images/icons.svg#icon-check-box-active"></use>
+                  </svg>
+
+                  <span class="agreement-label"
+                    >Соглашаюсь с рассылкой и принимаю
+                  </span>
+                </label>
+                <a href="" alt="policy" class="form-link">Условия договора</a>
+              </span>
+
+              <button type="submit" class="form-btn">Отправить</button>
+            </form>
+          </form>
         </div>
       </div>
     </main>
@@ -469,8 +544,31 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscriber-container">
+          <label
+            for="footer-subscriber"
+            class="footer-subscriber footer-social-header"
+            >Подпишитесь на рассылку</label
+          >
+          <span class="email-groop">
+            <input
+              type="email"
+              name="footer-subsriber"
+              id="footer-subscriber"
+              class="footer-email inverse-color"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="hero-btn plain">
+              Подписаться<svg width="24" height="24">
+                <use href="./images/icons.svg#icon-plain-1"></use>
+              </svg>
+            </button>
+          </span>
+        </div>
       </div>
     </footer>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
