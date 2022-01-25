@@ -397,7 +397,7 @@
         </div>
       </section>
 
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop" data-modal>
         <div class="modal-window">
           <button class="x-in-circle-btn" data-modal-close type="button">
             <svg width="11" height="11">
@@ -453,30 +453,40 @@
               <h3 class="no-margin comment-h">Коментарий</h3>
               <textarea placeholder="Введите текст" class="comment"></textarea>
 
-              <span class="form-policy-block">
-                <label for="policy" class="form-label-policy">
+              <div class="form-policy-block">
+                <label for="policy" class="form-label-policy" tabindex="0">
                   <input
                     type="checkbox"
                     id="policy"
                     value="agry"
                     name="policy-agreement"
-                    class="visually-hidden check"
+                    class="check-2"
                   />
+                  <!--
                   <svg class="not-checked">
                     <use href="./images/icons.svg#not-checked"></use>
                   </svg>
                   <svg class="checked">
                     <use href="./images/icons.svg#icon-check-box-active"></use>
                   </svg>
+                  <svg class="beha">
+                    <use href="./full-check.svg" width="15" height="15"></use>
+                  </svg>-->
+                  <!--
+                  <svg class="second-try box-bird">
+                    <use href="./images/icons.svg#icon-full-check-1"></use>
+                  </svg>-->
+
+                  <div class="icon"></div>
 
                   <span class="agreement-label"
                     >Соглашаюсь с рассылкой и принимаю
                   </span>
                 </label>
-                <a href="" class="form-link">Условия договора</a>
-              </span>
+                <a href="" class="form-link" tabindex="0">Условия договора</a>
+              </div>
 
-              <button type="submit" class="form-btn">Отправить</button>
+              <button type="submit" class="form-btn" tabindex="0">Отправить</button>
             </form>
         </div>
       </div>

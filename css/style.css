@@ -681,20 +681,25 @@ form{
 }
 
 .form-label-policy {
-  display: inline-block;
+  display: flex;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   text-align: left;
+  transition: outline 250ms var(--time-graf);
+}
+
+.form-label-policy:focus{
+  outline: var(--optional-color) 1px solid;
 }
 
 .form-policy-block {
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
 .form-link {
-  margin-bottom: 30px;
   font-size: 14px;
   font-family: inherit;
   line-height: inherit;
@@ -760,16 +765,10 @@ form{
   height: 15px;
 }
 .agreement-label {
-  padding-left: 36px;
+  display: flex; height: 24px;
 }
 
-.check{
-  transition: opacity 250ms var(--time-graf);
-}
 
-.check:checked ~ .checked {
-  opacity: 1;
-}
 
 
 .footer-subscriber-container{
@@ -806,3 +805,63 @@ text-align: left;
 .plain svg{
   margin-left: 10px;
 }
+
+.second-try{
+  width: 16px;height: 15px;
+  outline: solid black 2px;
+  border-radius: 2px;
+}
+
+.box-bird{
+  fill: white;
+}
+.check-2{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+          position: absolute;
+          
+
+}
+
+.check-2:focus-within{
+  outline-style: var(--optional-color);
+}
+
+.check-2:checked + .icon{
+  background-color: var(--optional-color);
+  border-color: var(--optional-color);
+}
+.icon{
+  display: flex;
+  width: 16px; height: 15px;
+  background-image: url(../images/full-check.svg);
+  border: 2px solid black;
+  border-radius: 2px;
+  background-size: contain;
+  background-origin: border-box;
+  margin-right: 8px;
+  align-self: center;
+}
+
+form [tabindex="0"]:focus{
+  outline: var(--optional-color) 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.check{
+  transition: opacity 250ms var(--time-graf);
+}
+
+.check:checked ~ .checked {
+  opacity: 1;
+}*/
