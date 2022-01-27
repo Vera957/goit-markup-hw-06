@@ -689,10 +689,6 @@ form{
   transition: outline 250ms var(--time-graf);
 }
 
-.form-label-policy:focus{
-  outline: var(--optional-color) 1px solid;
-}
-
 .form-policy-block {
   display: flex;
   align-items: center;
@@ -768,9 +764,6 @@ form{
   display: flex; height: 24px;
 }
 
-
-
-
 .footer-subscriber-container{
   margin-left: 93px;
   display: flex;
@@ -824,31 +817,36 @@ text-align: left;
 
 }
 
-.check-2:focus-within{
+/*.check-2:focus{
   outline-style: var(--optional-color);
-}
+}*/
 
-.check-2:checked + .icon{
-  background-color: var(--optional-color);
-  border-color: var(--optional-color);
-}
+
 .icon{
-  display: flex;
   width: 16px; height: 15px;
-  background-image: url(../images/full-check.svg);
   border: 2px solid black;
   border-radius: 2px;
-  background-size: contain;
-  background-origin: border-box;
   margin-right: 8px;
   align-self: center;
+  transition: 
+  border 250ms var(--time-graf),
+  background-color 250ms var(--time-graf),
+  background-size 250ms var(--time-graf);
+
 }
 
 form [tabindex="0"]:focus{
   outline: var(--optional-color) 1px solid;
 }
 
-
+.check-2:focus + .icon{
+  background-color: var(--optional-color);
+  border: 2px solid var(--optional-color);
+  display: flex;
+  background-image: url(../images/full-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
 
 
 
