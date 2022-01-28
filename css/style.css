@@ -340,6 +340,7 @@ body {
 footer .container {
   display: flex;
 }
+
 .hero {
   background-image: url(../images/img-bg-optimized.jpg);
   background-image: linear-gradient(
@@ -355,6 +356,7 @@ footer .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-marketing {
   color: var(--main-bg-color);
   font-weight: 900;
@@ -808,6 +810,7 @@ text-align: left;
 .box-bird{
   fill: white;
 }
+
 .check-2{
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -816,11 +819,6 @@ text-align: left;
           
 
 }
-
-/*.check-2:focus{
-  outline-style: var(--optional-color);
-}*/
-
 
 .icon{
   width: 16px; height: 15px;
@@ -839,16 +837,20 @@ form [tabindex="0"]:focus{
   outline: var(--optional-color) 1px solid;
 }
 
-.check-2:focus + .icon{
-  background-color: var(--optional-color);
+.check-2:focus + .icon,
+.check-2:hover + .icon{
+ /* background-color: var(--optional-color);*/
+  border-color: var(--optional-color);
+}
+
+.check-2:checked + .icon{
   border: 2px solid var(--optional-color);
   display: flex;
   background-image: url(../images/full-check.svg);
   background-size: contain;
   background-origin: border-box;
+  background-color: var(--optional-color);
 }
-
-
 
 
 
